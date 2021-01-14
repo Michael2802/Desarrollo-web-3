@@ -1,0 +1,201 @@
+/*--------------------- Srcoll Personalizado ---------------------*/
+body::-webkit-scrollbar{
+    width: 10px;
+   
+}
+body::-webkit-scrollbar-thumb{
+    background:rgba(0, 22, 40, .6);
+    border-radius: 6px;
+}
+/*---------------------  Estilos Base ---------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1920px){
+/*--------------------------------------- Header ---------------------------------*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: black ;
+
+    
+}
+.logo{
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: rgb(226, 226, 226);
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+    
+}
+
+   
+/*----------------------------------Banner-----------------------------------------*/
+    .banner{
+        width: 100%;
+        height: 92vh;
+        background-size: cover;
+        background-position: center;
+        transition: all .1s ease-in-out;
+        background-image: url('img/imagen1.jpg');
+        animation: banner 20s infinite linear;
+        
+    }
+    .banner-contect{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        color:seashell;
+        background-color: rgba(0, 22, 40, .6);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-contect h1{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 30px;
+        font-size: 40px;
+        text-align: center;
+
+    }
+    .banner-contect a {
+        text-decoration: none;
+        color: seashell;
+        padding: 9px 20px;
+        border: 1px solid #fff;
+        text-transform: uppercase;
+        transition: all .3s ease-in-out;
+    }
+
+    .banner-contect a:hover{
+        background-color: #fff;
+        color: #333;
+    }
+     @keyframes banner {
+         0%{
+            background-image: url('img/imagen1.jpg');  
+         }
+         25%{
+            background-image: url('img/imagen1.jpg');  
+         }
+         26%{
+            background-image: url('img/imagen2.jpg');  
+         }
+         50%{
+            background-image: url('img/imagen2.jpg');  
+         }
+         51%{
+            background-image: url('img/fachadas.png');  
+         }
+         75%{
+            background-image: url('img/fachadas.png');  
+         }
+         76%{
+            background-image: url('img/imagen2.jpg');  
+         }
+         100%{
+            background-image: url('img/imagen2.jpg');  
+         }
+         
+     }
+    }
+    @media screen and (max-width: 1024px){
+        .nav-links{
+            width: 60%;
+    }
+    }
+    body{
+        overflow-x: hidden;
+    }
+    
+    @media screen and (max-width:768px){
+
+        /*--------------------- Header/nav ---------------------*/
+        body{
+            overflow-x: hidden;
+        }
+        .nav-links{
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top:8vh;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+        }
+        .nav-links li{
+            opacity: 0;
+        }
+        .burger{
+            display: block;
+        }
+    }
+        
+        .nav-active{
+            transform: translateX(0%);
+        }
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+
+        }    
+    }
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+    /*----------------------------------Banner-----------------------------------------*/
+
