@@ -1,3 +1,4 @@
+//---------------------------------menu------------------------------------------------//
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -20,5 +21,29 @@ const navSlide = () => {
 
 
 }
-
 navSlide();
+//---------------------------------Cambio de Color Menu------------------------------------------------//
+window.addEventListener('scroll', function () {
+    let nav = document.querySelector('nav');
+    let windowPosition = window.scrollY > 0;
+
+    nav.classList.toggle('scrolling-active', windowPosition);
+  })
+  //---------------------------------Animacion Divs------------------------------------------------//
+  let animado = document.querySelectorAll(".animado");
+
+function mostrarScroll() {
+    let scrollTop =
+    document.documentElement.scrollTop;
+    for (var i=0; i < animado.length; i++ ) {
+        let alturaAnimado = animado[i].offsetTop;
+
+        if(alturaAnimado - 300 < scrollTop) {
+            animado[i].style.opacity = 1;
+            animado[i].classList.add("mostrarArriba");
+        }
+
+    }
+}
+
+window.addEventListener('scroll', mostrarScroll);
