@@ -48,7 +48,73 @@ body::-webkit-scrollbar-thumb{
 
 
 @media screen and (max-width: 1920px){
-/*--------------------------------------- Header ---------------------------------*/
+/*------------------------------------------Redes---------------------------------------*/
+
+.social{
+    /*las imágenes usadas tienen width de 48px*/
+    width:48px;
+    position:fixed;
+    top:50px;
+    right: 0;
+    
+    
+}
+
+/* Extra centrado vertical*/
+
+.social{
+    /*border:1px solid #000;*/
+    top:50%;
+    height:205px;
+    /*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
+    margin-top:-100px;
+}
+    
+    .fa:hover{
+       
+        border-left-width: 200px;
+
+    }
+    
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    
+    
+  }
+  
+  .fa:hover {
+     
+    width: 100px;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    transition: width 2s;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    transition: width 2s;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    transition: width 2s;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+    transition: width 2s;
+    
+  }
+  /*--------------------------------------- Header/nav ---------------------------------*/
 nav{
     position: fixed;
     width: 100%;
@@ -235,6 +301,48 @@ nav{
         height: 200px;
         border-radius: 50%;
      }
+     /*---------------------------------footer------------------------------------------------*/
+     .contenido{
+         display: grid;
+         grid-template-columns: auto auto;
+         padding: 20px;
+         grid-gap: 350px;
+         background-color: #333;
+         color: aliceblue;
+         box-shadow: 0 10px 2rem rgb(0,0,0,.1);
+         
+     }
+     .contenido p{
+         font-size: 15px;
+        
+     }
+     .contenido h2{
+        padding-bottom: 20px;
+        color: cadetblue;
+    }
+     .row2{
+         display: flex;
+         margin: 20px;
+     }
+     .row2 img{
+         width: 30px;
+         height: 30px;
+         margin-right: 20px;
+     }
+
+     .redes{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 20px;
+        grid-gap: 350px;
+        justify-items: center;
+        margin-top: 20px;
+
+     }
+     .redes2 img{
+        width: 30px;
+        height: 30px; 
+
 }
      
      
@@ -342,6 +450,19 @@ nav{
         grid-column: 1 / -1;
         padding: 0;
        }
+       .column--informacion{
+        grid-column: 1 / -1;
+        
+       }
+       .column--contactos{
+        grid-column: 1 / -1; 
+        margin-top: -300px;
+       }
+       .redes{
+        margin-right: -300px;
+         
+    }
+
     }
         
         
@@ -353,5 +474,4 @@ nav{
 
       
     
-
 
