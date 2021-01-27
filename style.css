@@ -55,9 +55,7 @@ body::-webkit-scrollbar-thumb{
     width:48px;
     position:fixed;
     top:50px;
-    right: 0;
-    
-    
+    right: 0;   
 }
 
 /* Extra centrado vertical*/
@@ -68,14 +66,7 @@ body::-webkit-scrollbar-thumb{
     height:205px;
     /*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
     margin-top:-100px;
-}
-    
-    .fa:hover{
-       
-        border-left-width: 200px;
-
-    }
-    
+}   
 
 .fa {
     padding: 20px;
@@ -84,34 +75,30 @@ body::-webkit-scrollbar-thumb{
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-    
-    
   }
-  
-  .fa:hover {
-     
-    width: 100px;
+  .fa:hover {   
+    opacity: 0.6;
   }
   
   .fa-facebook {
     background: #3B5998;
     color: white;
-    transition: width 2s;
+    
   }
   .fa-twitter {
     background: #55ACEE;
     color: white;
-    transition: width 2s;
+    
   }
   .fa-linkedin {
     background: #007bb5;
     color: white;
-    transition: width 2s;
+    
   }
   .fa-instagram {
     background: #125688;
     color: white;
-    transition: width 2s;
+    
     
   }
   /*--------------------------------------- Header/nav ---------------------------------*/
@@ -301,6 +288,34 @@ nav{
         height: 200px;
         border-radius: 50%;
      }
+   /*---------------------------------contactenos------------------------------------------------*/
+   .contact-form{
+       background-color: cadetblue;
+       margin-left: auto;
+       margin-right: auto;
+       padding: 1.5em;
+   }
+    .contact-form h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    .contact-form span{
+        color: #fff;
+    }
+    .contact-form form button,
+    .contact-form form input,
+    .contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+
+
+   }
      /*---------------------------------footer------------------------------------------------*/
      .contenido{
          display: grid;
