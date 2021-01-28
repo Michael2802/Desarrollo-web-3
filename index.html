@@ -14,11 +14,11 @@
 <body>
   <!------------------------------------------Redes--------------------------------------->
   <div class="social">
-		<a href="#" class="fa fa-facebook"></a>
-		<a href="#" class="fa fa-twitter"></a>
-		<a href="#" class="fa fa-linkedin"></a>
-		<a href="#" class="fa fa-instagram"></a>
-	</div>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-instagram"></a>
+  </div>
   <!------------------------------------------Header--------------------------------------->
   <nav>
     <div class="logo">
@@ -47,7 +47,7 @@
     </section>
     <!--------------------------------- Servicios------------------------------------------------>
     <div class="servicios">
-      <div class="item1 animado">
+      <div class="item1 ">
         <img src="img/noticia1.jpg" alt="noticas fachadas">
         <h3>Lorem ips</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti fugit distinctio eligendi est eveniet
@@ -55,7 +55,7 @@
           ipsa inventore nesciunt.</p>
         <a href="">Lear More<li class="fas"></li></a>
       </div>
-      <div class="item2 animado">
+      <div class="item2">
         <img src="img/noticia2.jpg" alt="noticas fachadas">
         <h3>Lorem ips</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti fugit distinctio eligendi est eveniet
@@ -63,7 +63,7 @@
           ipsa inventore nesciunt.</p>
         <a href="">Lear More<li class="fas"></li></a>
       </div>
-      <div class="item3 animado">
+      <div class="item3">
         <img src="img/noticia3.jpg" alt="noticas fachadas">
         <h3>Lorem ips</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti fugit distinctio eligendi est eveniet
@@ -71,7 +71,7 @@
           ipsa inventore nesciunt.</p>
         <a href="">Lear More<li class="fas"></li></a>
       </div>
-      <div class="item4 animado">
+      <div class="item4">
         <img src="img/noticia4.jpg" alt="noticas fachadas">
         <h3>Lorem ips</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti fugit distinctio eligendi est eveniet
@@ -148,36 +148,38 @@
     </section>
   </main>
   <!---------------------------------contactenos------------------------------------------------>
+  <div class="todo-contendio animado">
     <div class="contact-form">
-        <h3>Contact <span>us</span></h3>
-        <form action="">
-            <p>
-                <label>FullName</label>
-                <input type="text" name="fullname">
-            </p>
-            <p>
-                <label>Email Adress</label>
-                <input type="email" name="email">
-            </p>
-            <p>
-                <label>Phone Number</label>
-                <input type="tel" name="phone">
-            </p>
-            <p>
-                <label>Affair</label>
-                <input type="text" name="affair">
-            </p>
-            <p class="block">
-               <label>Message</label> 
-                <textarea name="message" rows="3"></textarea>
-            </p>
-            <p class="block">
-                <button>
-                    Send
-                </button>
-            </p>
-        </form>
+      <h3>Contact <span>us</span></h3>
+      <form action="">
+        <p>
+          <input placeholder="Nombre" type="text" name="fullname">
+        </p>
+        <p>
+          <input placeholder="Apellido" type="email" name="email">
+        </p>
+        <p>
+          <input placeholder="Correo" type="tel" name="phone">
+        </p>
+        <p>
+          <input placeholder="Telefono" type="text" name="affair">
+        </p>
+        <p class="block">
+          <textarea placeholder="Mensaje" name="message" rows="3"></textarea>
+        </p>
+        <p class="block">
+          <button>
+           Enviar
+          </button>
+        </p>
+      </form>
     </div>
+    <div class="iframe">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m8!1m3!1d63628.273605244394!2d-74.1708245!3d4.6355907!3m2!1i1024!2i768!4f13.1!4m7!3e6!4m3!3m2!1d4.6303361!2d-74.1376942!4m1!2scll35c%20%2373b-10!5e0!3m2!1sen!2sco!4v1611844254594!5m2!1sen!2sco"
+        width="500" height="420" frameborder="0" style="border:0;" allowfullscreen="" tabindex="0"></iframe>
+    </div>
+  </div>
   <!---------------------------------footer------------------------------------------------>
 
   <footer>
@@ -192,20 +194,20 @@
         <h2>Información de Contacto</h2>
         <div class="row2">
           <img
-            src="https://www.flaticon.com/svg/vstatic/svg/854/854929.svg?token=exp=1611447581~hmac=a5989f838d839aec1785a014a965fd14"
+            src="icons/maps.svg"
             alt="">
           <p><a style="color: white;" href=" https://goo.gl/maps/Xzh5YmVQky9Tz3Rs7">Cra 46 # 130 - 56
               Bogotá</p></a>
         </div>
         <div class="row2">
           <img
-            src="https://www.flaticon.com/svg/vstatic/svg/732/732200.svg?token=exp=1611447620~hmac=a0f7cf8255fd233f519c17fead8198ca"
+            src="icons/email.svg"
             alt="">
           <p><a style="color: white;" href="mailto:rochipili@outlook.es">rochipili@outlook.es</p></a>
         </div>
         <div class="row2">
           <img
-            src="https://www.flaticon.com/svg/vstatic/svg/890/890547.svg?token=exp=1611447649~hmac=af5910e01ce39b442fd60097b01a0676"
+            src="icons/call.svg"
             alt="">
           <p><a style="color: white;" href="tel:310-791-2748">(+57) 310 791-2748 </a></p>
         </div>
@@ -214,16 +216,16 @@
     <div class="redes">
       <h5>Derechos Reservados © | Akiros 2021</h5>
       <div class=redes2>
-      <img
-        src="https://www.flaticon.com/svg/vstatic/svg/1384/1384005.svg?token=exp=1611446901~hmac=4a24fb69974c33c1b451743c08792dbf"
-        alt="">
-      <img
-        src="https://www.flaticon.com/svg/vstatic/svg/1384/1384017.svg?token=exp=1611447003~hmac=e349a624fb32e7df174bc5029acce4fb"
-        alt="">
         <img
-        src="https://www.flaticon.com/svg/vstatic/svg/1384/1384014.svg?token=exp=1611447032~hmac=039732d8785fdb6617535df9f84e9b33"
-        alt="">
-    </div>
+          src="icons/facebook-circular-logo.svg"
+          alt="facebook-akairos">
+        <img
+          src="icons/twitter.svg"
+          alt="twitter-akairos">
+        <img
+          src="icons/linkedin.svg"
+          alt="linkedin">
+      </div>
     </div>
   </footer>
 
