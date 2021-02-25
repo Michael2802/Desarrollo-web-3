@@ -462,13 +462,25 @@ nav{
 }
    /*---------------------------------contactenos------------------------------------------------*/
    
-   .iframe{
-       padding-top: 70px;
-   }
-   .contact-form{
+   
+   .todo-contendio {
+    display: flex;
     width: 100%;
     overflow: hidden;
    }
+   .todo-contendio .contact-form,
+   .todo-contendio .iframe{
+       width: 50%;
+   }
+   .contact-form{
+       margin-left: 50px;
+       margin-right: 50px;
+   }
+   .iframe{
+       padding-top: 100px;
+   }
+
+   
    .contact-form p{
        margin:0;
        padding: 1em;
@@ -677,14 +689,19 @@ nav{
        }
         
     /*----------------------------------Contactenos-----------------------------------------*/
+    .todo-contendio{
+        clear:left;
+    }
     .iframe{
         visibility: hidden;
     }
-    .contact-form{
-       width: 100%;
-       
-
+    .contact-form form,
+    .contact-form h3{
+        width: 350px;
+        text-align: center;
+        
     }
+    
     
     /*----------------------------------fotter-----------------------------------------*/
        .column--informacion{
@@ -696,7 +713,7 @@ nav{
         margin-top: -300px;
        }
        .redes{
-        width: 100%;
+        grid-column: 1 / 1;
          
     }
    
