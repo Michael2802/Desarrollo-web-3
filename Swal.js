@@ -1,5 +1,4 @@
 Swal.fire({
-    title:"Hola"
 });
 
 

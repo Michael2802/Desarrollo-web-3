@@ -45,6 +45,14 @@ function mostrarScroll() {
 
     }
 }
+//---------------------------------autocarga------------------------------------------------//
+window.onload = function(){
+    var contenedor = document.getElementById('contenedor_carga');
+    
+    contenedor.style.visibility = 'hidden';
+    contenedor.style.opacity = '0';
+}
+
  //---------------------------------Slider Proyectos------------------------------------------------//
 window.addEventListener('scroll', mostrarScroll);
 var slideIndex = 1;
